@@ -25,9 +25,9 @@ Most recently, Marteria and Casper were awarded the [1 Live Crown "BEST-HIP-HOP-
 - [ ] Load social media channels of marteria dynamically on to the site (Live-Feed)
 - [ ] Add Ticket-Section for upcoming concerts
 
-If you have any questions about the project, contact me via [e-mail](<mail.tobiasdossinger.com>). Feedback is of course also welcome.
+If you have any questions and/or feedback about the project, contact me via [e-mail](mailto:mail.tobiasdossinger.com). 
 
-Enjoy 🎶
+**Enjoy** 🎶
 
 ------------------------------------
 
