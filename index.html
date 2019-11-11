@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./spectre-0.5.8/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="./spectre-0.5.8/dist/spectre-icons.min.css">
+    <link rel="stylesheet" href="./spectre-0.5.8/dist/spectre.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet " href="./css/fontawesome/css/all.min.css">
+
+    <script type="scipt" src="jquery.js"></script>
+    <script type="application/javascript" src="./js/script.js"></script>
+    <script type="application/javascript" src="./js/cards.js"></script>
+    <title>Form Validation</title>
+</head>
+
+<body>
+        <div class="parallax">
+                <div class="parallax-top-left" tabindex="1"></div>
+                <div class="parallax-top-right" tabindex="2"></div>
+                <div class="parallax-bottom-left" tabindex="3"></div>
+                <div class="parallax-bottom-right" tabindex="4"></div>
+                <div class="parallax-content">
+                  <div class="parallax-front">
+                    <h2>Marteria/Marsimoto</h2>
+                  </div>
+                  <div class="parallax-back">
+                    <img src="https://www.becktomusic.de/dateien/marsimoto_pressefoto9_fotograf_paulripke.jpg" class="img-responsive rounded" ...>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- <div class="carousel">
+                    
+                    <input class="carousel-locator" id="slide-1" type="radio" name="carousel-radio" hidden="" checked="">
+                    <input class="carousel-locator" id="slide-2" type="radio" name="carousel-radio" hidden="">
+                    <input class="carousel-locator" id="slide-3" type="radio" name="carousel-radio" hidden="">
+                    <input class="carousel-locator" id="slide-4" type="radio" name="carousel-radio" hidden="">
+                    
+                    
+                    <div class="carousel-container">
+                     
+                      <figure class="carousel-item">
+                        <label class="item-prev btn btn-action btn-lg" for="slide-4"><i class="icon icon-arrow-left"></i></label>
+                        <label class="item-next btn btn-action btn-lg" for="slide-2"><i class="icon icon-arrow-right"></i></label>
+                        <img class="img-responsive rounded" src="https://i2.wp.com/www.tribe-online.de/wp-content/uploads/2017/12/Marteria-December17-AdrianSailer-9.jpg" alt="Marsimoto">
+                      </figure>
+                      <figure class="carousel-item">
+                        <label class="item-prev btn btn-action btn-lg" for="slide-1"><i class="icon icon-arrow-left"></i></label>
+                        <label class="item-next btn btn-action btn-lg" for="slide-3"><i class="icon icon-arrow-right"></i></label>
+                        <img class="img-responsive rounded" src="https://i1.wp.com/www.tribe-online.de/wp-content/uploads/2017/12/Marteria-December17-AdrianSailer-3.jpg" alt="Konzert Stuttgart">
+                      </figure>
+                      <figure class="carousel-item">
+                        <label class="item-prev btn btn-action btn-lg" for="slide-2"><i class="icon icon-arrow-left"></i></label>
+                        <label class="item-next btn btn-action btn-lg" for="slide-4"><i class="icon icon-arrow-right"></i></label>
+                        <img class="img-responsive rounded" src="https://i1.wp.com/www.tribe-online.de/wp-content/uploads/2017/12/Marteria-December17-AdrianSailer-6.jpg" alt="Konzert Roswell">
+                      </figure>
+                      <figure class="carousel-item">
+                        <label class="item-prev btn btn-action btn-lg" for="slide-3"><i class="icon icon-arrow-left"></i></label>
+                        <label class="item-next btn btn-action btn-lg" for="slide-1"><i class="icon icon-arrow-right"></i></label>
+                        <img class="img-responsive rounded" src="https://i0.wp.com/www.tribe-online.de/wp-content/uploads/2017/12/Marteria-December17-AdrianSailer-4.jpg" alt="Konzert Stuttgart 2">
+                      </figure>
+                    </div>
+                    
+                    <div class="carousel-nav">
+                      <label class="nav-item text-hide c-hand" for="slide-1">1</label>
+                      <label class="nav-item text-hide c-hand" for="slide-2">2</label>
+                      <label class="nav-item text-hide c-hand" for="slide-3">3</label>
+                      <label class="nav-item text-hide c-hand" for="slide-4">4</label>
+                    </div>
+</div> -->
+               
+    <form id="form" action="https://webdevcit.com/displayvalues.php" method="GET">
+        <div class="container">
+            <!-- <div class="columns col-gapless">
+                <div class="column col-0"></div>
+                <div class="column col-6">
+                    <h2>RATE YOUR FAVORITE MATERIA ALBUM</h1>
+                </div>
+                <div class="column col-0"></div>
+            </div> -->
+            <div id="error"></div>
+            <div class="columns col-gapless">
+                <div class="column col-0"></div>
+                <div class="column col-6">
+
+                    <div class="form-group">
+                        <div class="has-icon-left">
+                            <input class="form-input" type="text" id="name" name="name" placeholder="Max Mustermann"
+                                required>
+                            <i class="form-icon icon icon-people"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="has-icon-left">
+                            <input class="form-input" type="email" id="email" name="email"
+                                placeholder="yourmail@website.com" required>
+                            <i class="form-icon icon icon-mail"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="form-label" for="6-Digit-Code">6-Digit-Code</label>
+                        <input class="form-input" type="number" id="6DigitCode" name="6-Digit-Code" placeholder="123456"
+                            required>
+                    </div>
+
+                </div>
+                <div class="column col-0"></div>
+            </div>
+        </div>
+        <div class="columns col-gapless">
+            <div class="column col-0"></div>
+            <div class="column col-6">
+                <h2>Choose <b>one</b> album</h2>
+            </div>
+            <div class="column col-0"></div>
+        </div>
+
+        <!-- <div class="container">
+            <div class="columns">
+                <div class="column col-0"></div>
+                <div class="column col-6">
+                    <ul id="gallery">
+                        <li><img src="./album/1.jpg">
+                        </li>
+                        <li><img src="./album/2.jpg">
+                        </li>
+                        <li><img src="./album/3.jpg">
+                        </li>
+                        <li><img src="./album/Zum Glück in die Zukunft I..jpg">
+                        </li>
+                        <li><img src="./album/Gruner-Samt-cover.jpg">
+                        </li>
+                        <li><img src="./album/Zum Glück in die Zukunft II..jpg">
+                        </li>
+                        <li><img src="./album/Ring der Nebelungen.jpg">
+                        </li>
+                        <li><img src="./album/Roswell.jpg">
+                        </li>
+                        <li><img src="./album/Verde.jpg">
+                        </li>
+                        <li><img src="./album/1982-cover.jpg">
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="column col-0"></div>
+            </div>
+        </div> -->
+       
+       
+         <!-- Album Cards -->
+        <div id="album"></div>
+
+        <div class="columns col-gapless">
+            <div class="column col-0"></div>
+            <div class="column col-xs-12">
+                <h3>Give it a rating</h3>
+            </div>
+            <div class="column col-0"></div>
+        </div>
+
+        <div class="container">
+            <div class="columns">
+                <div class="column col-0"></div>
+                <div class="column col-xs-12">
+                    <span onmouseover="heartmark(this)" onclick="heartmark(this)" id="1one"
+                        style="font-size:40px;cursor:pointer;" class="fas fa-heart checked"></span>
+                    <span onmouseover="heartmark(this)" onclick="heartmark(this)" id="2one"
+                        style="font-size:40px;cursor:pointer;" class="fas fa-heart "></span>
+                    <span onmouseover="heartmark(this)" onclick="heartmark(this)" id="3one"
+                        style="font-size:40px;cursor:pointer;" class="fas fa-heart "></span>
+                    <span onmouseover="heartmark(this)" onclick="heartmark(this)" id="4one"
+                        style="font-size:40px;cursor:pointer;" class="fas fa-heart"></span>
+                    <span onmouseover="heartmark(this)" onclick="heartmark(this)" id="5one"
+                        style="font-size:40px;cursor:pointer;" class="fas fa-heart"></span>
+                    <br />
+                </div>
+                <div class="column col-0"></div>
+            </div>
+        </div>
+        <div class="columns col-gapless">
+            <div class="column col-0"></div>
+            <div class="column col-xs-12">
+                <button class="btn btn-success btn-sm" type="submit">Submit</button>
+                <button class="btn btn-error btn-sm" type="reset">Reset Form</button>
+            </div>
+            <div class="column col-0"></div>
+
+        </div>
+    </form>
+
+    <div class="form-group"></div>
+        <label class="form-checkbox">
+          <input type="checkbox">
+          <i class="form-icon"></i>
+       
+      
+
+
+
+      <div id="cards" class="container">
+        <div class="docs-demo columns">
+        <div class="column col-xs-12">
+        <div class="card">
+        <div class="card-header">
+        <div class="card-title h5">TITLE</div>
+        <div class="card-subtitle text-gray">Jahr und ' - '+ ${arr[i].alterego} </div>
+        </div>
+        <div class="class-image">
+        <img class="img-responsive" src="./' + ${arr[i].cover} + alt=Album Grüner Samt\">
+        </div>
+        <div class="class-body">'+ arr[i].releaseDate +'</div>
+        <div class="card-footer\">
+        <div class="btn-group btn-group block\">
+        <button class="btn btn-link\"><a href="'+ arr[i].spotify_link +'\">Spotify Playlist</a></button>
+        <button class="btn btn-link\"><a href="'+ arr[i].buy_link +'\">Buy Album</a></button>
+        <div class="form-group">
+        <label class="form-checkbox">
+        <input type="checkbox">
+        <i class="form-icon"></i> My favorite Album
+        </label>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </label>
+    </div>
+</body>
+
+</html>
