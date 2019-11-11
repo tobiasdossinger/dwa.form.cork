@@ -33,12 +33,6 @@ const marteriaAlbum = () => {
 }
 
 
-const addAlbum = () => {
-    let albumLists = document.getElementById("gallery").getElementsByTagName('li');
-
-
-}
-
 const checked = false;
 
 const arr = [{"value": "abc","checked": true},{"value": "xyz","checked": false},{"value": "lmn","checked": true}]
