@@ -1,6 +1,7 @@
-# Assignment Form-Validation - Developing Web Applications | *Autumn Term 2019*
+# Form-Validation
+*Developing Web Applications* | *Autumn Term 2019*
 
-**This is my submission for the Form Assignment** </br>
+**This is my submission for the Form-Validation Assignment** </br>
 *Due 15. November 2019 @ 11:59 pm* 
 
 ## Hosted @ https://dwa.tobiasdossinger.com/ 
