@@ -25,7 +25,7 @@ Most recently, Marteria and Casper were awarded the [1 Live Crown "BEST-HIP-HOP-
 - [x] Listen your favorite album e.g. or any other album via Spotify
 - [x] Buy your favorite album e.g. or any other album via Amazon
 
-## Future plans for the form
+## Future plans
 
 - [ ] Load social media channels of marteria dynamically on to the site (Live-Feed)
 - [ ] Add Ticket-Section for upcoming concerts
