@@ -21,8 +21,6 @@ form.addEventListener('submit', (e) => {
     if (digitCode.length > 6) {
         messages.push('Code has to have 6 characters');
         console.log(digitCode.value.length);
-
-
     }
 
 })

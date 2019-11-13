@@ -35,57 +35,10 @@
                 </div>
               </div>
 
-
-              <!-- <div class="carousel">
-                    
-                    <input class="carousel-locator" id="slide-1" type="radio" name="carousel-radio" hidden="" checked="">
-                    <input class="carousel-locator" id="slide-2" type="radio" name="carousel-radio" hidden="">
-                    <input class="carousel-locator" id="slide-3" type="radio" name="carousel-radio" hidden="">
-                    <input class="carousel-locator" id="slide-4" type="radio" name="carousel-radio" hidden="">
-                    
-                    
-                    <div class="carousel-container">
-                     
-                      <figure class="carousel-item">
-                        <label class="item-prev btn btn-action btn-lg" for="slide-4"><i class="icon icon-arrow-left"></i></label>
-                        <label class="item-next btn btn-action btn-lg" for="slide-2"><i class="icon icon-arrow-right"></i></label>
-                        <img class="img-responsive rounded" src="https://i2.wp.com/www.tribe-online.de/wp-content/uploads/2017/12/Marteria-December17-AdrianSailer-9.jpg" alt="Marsimoto">
-                      </figure>
-                      <figure class="carousel-item">
-                        <label class="item-prev btn btn-action btn-lg" for="slide-1"><i class="icon icon-arrow-left"></i></label>
-                        <label class="item-next btn btn-action btn-lg" for="slide-3"><i class="icon icon-arrow-right"></i></label>
-                        <img class="img-responsive rounded" src="https://i1.wp.com/www.tribe-online.de/wp-content/uploads/2017/12/Marteria-December17-AdrianSailer-3.jpg" alt="Konzert Stuttgart">
-                      </figure>
-                      <figure class="carousel-item">
-                        <label class="item-prev btn btn-action btn-lg" for="slide-2"><i class="icon icon-arrow-left"></i></label>
-                        <label class="item-next btn btn-action btn-lg" for="slide-4"><i class="icon icon-arrow-right"></i></label>
-                        <img class="img-responsive rounded" src="https://i1.wp.com/www.tribe-online.de/wp-content/uploads/2017/12/Marteria-December17-AdrianSailer-6.jpg" alt="Konzert Roswell">
-                      </figure>
-                      <figure class="carousel-item">
-                        <label class="item-prev btn btn-action btn-lg" for="slide-3"><i class="icon icon-arrow-left"></i></label>
-                        <label class="item-next btn btn-action btn-lg" for="slide-1"><i class="icon icon-arrow-right"></i></label>
-                        <img class="img-responsive rounded" src="https://i0.wp.com/www.tribe-online.de/wp-content/uploads/2017/12/Marteria-December17-AdrianSailer-4.jpg" alt="Konzert Stuttgart 2">
-                      </figure>
-                    </div>
-                    
-                    <div class="carousel-nav">
-                      <label class="nav-item text-hide c-hand" for="slide-1">1</label>
-                      <label class="nav-item text-hide c-hand" for="slide-2">2</label>
-                      <label class="nav-item text-hide c-hand" for="slide-3">3</label>
-                      <label class="nav-item text-hide c-hand" for="slide-4">4</label>
-                    </div>
-</div> -->
-               
-    <form id="form" action="https://webdevcit.com/displayvalues.php" method="GET">
-        <div class="container">
-            <!-- <div class="columns col-gapless">
-                <div class="column col-0"></div>
-                <div class="column col-6">
-                    <h2>RATE YOUR FAVORITE MATERIA ALBUM</h1>
-                </div>
-                <div class="column col-0"></div>
-            </div> -->
-            <div id="error"></div>
+<h1> <b> Vote </b> for your <b> favorite Marteria Album</b></h1>
+<form id="form" action="https://webdevcit.com/displayvalues.php" method="GET">
+    <div class="container">
+            <!-- <div id="error"></div> -->
             <div class="columns col-gapless">
                 <div class="column col-0"></div>
                 <div class="column col-6">
@@ -106,7 +59,7 @@
                     </div>
                     <div>
                         <label class="form-label" for="6-Digit-Code">6-Digit-Code</label>
-                        <input class="form-input" type="number" id="6DigitCode" name="6-Digit-Code" placeholder="123456"
+                        <input class="form-input" type="text" id="6DigitCode" name="6-Digit-Code" placeholder="123456"
                             required>
                     </div>
 
@@ -116,52 +69,18 @@
         </div>
         <div class="columns col-gapless">
             <div class="column col-0"></div>
-            <div class="column col-6">
+            <div class="">
                 <h2>Choose <b>one</b> album</h2>
             </div>
             <div class="column col-0"></div>
         </div>
-
-        <!-- <div class="container">
-            <div class="columns">
-                <div class="column col-0"></div>
-                <div class="column col-6">
-                    <ul id="gallery">
-                        <li><img src="./album/1.jpg">
-                        </li>
-                        <li><img src="./album/2.jpg">
-                        </li>
-                        <li><img src="./album/3.jpg">
-                        </li>
-                        <li><img src="./album/Zum Glück in die Zukunft I..jpg">
-                        </li>
-                        <li><img src="./album/Gruner-Samt-cover.jpg">
-                        </li>
-                        <li><img src="./album/Zum Glück in die Zukunft II..jpg">
-                        </li>
-                        <li><img src="./album/Ring der Nebelungen.jpg">
-                        </li>
-                        <li><img src="./album/Roswell.jpg">
-                        </li>
-                        <li><img src="./album/Verde.jpg">
-                        </li>
-                        <li><img src="./album/1982-cover.jpg">
-                        </li>
-                    </ul>
-
-                </div>
-                <div class="column col-0"></div>
-            </div>
-        </div> -->
-       
-       
          <!-- Album Cards -->
         <div id="album"></div>
 
         <div class="columns col-gapless">
             <div class="column col-0"></div>
-            <div class="column col-xs-12">
-                <h3>Give it a rating</h3>
+            <div class="">
+                <h3>Rate it</h3>
             </div>
             <div class="column col-0"></div>
         </div>
@@ -169,7 +88,14 @@
         <div class="container">
             <div class="columns">
                 <div class="column col-0"></div>
-                <div class="column col-xs-12">
+                <div class="">
+                    <table>
+                        <tr>
+                            <div id="heart" class="heart-customs"></div>
+                        </tr>
+                    </table>
+            </div>
+                <!-- <div class="">
                     <span onmouseover="heartmark(this)" onclick="heartmark(this)" id="1one"
                         style="font-size:40px;cursor:pointer;" class="fas fa-heart checked"></span>
                     <span onmouseover="heartmark(this)" onclick="heartmark(this)" id="2one"
@@ -181,15 +107,19 @@
                     <span onmouseover="heartmark(this)" onclick="heartmark(this)" id="5one"
                         style="font-size:40px;cursor:pointer;" class="fas fa-heart"></span>
                     <br />
-                </div>
+                </div> -->
+
+                
+
+                
                 <div class="column col-0"></div>
             </div>
         </div>
         <div class="columns col-gapless">
             <div class="column col-0"></div>
-            <div class="column col-xs-12">
-                <button class="btn btn-success btn-sm" type="submit">Submit</button>
-                <button class="btn btn-error btn-sm" type="reset">Reset Form</button>
+            <div class="">
+                <button class="btn btn-success btn-lg" type="submit">Vote</button>
+                <button class="btn btn-error btn-lg" type="reset">Reset Form</button>
             </div>
             <div class="column col-0"></div>
 

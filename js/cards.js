@@ -24,18 +24,13 @@ let album = [
 
 ]
 
+let heart = '<i class="fas fa-heart"></i>';
+
 console.log(album[1].title);
 
-const marteriaAlbum = () => {
+//const checked = false;
 
-
-
-}
-
-
-const checked = false;
-
-const arr = [{"value": "abc","checked": true},{"value": "xyz","checked": false},{"value": "lmn","checked": true}]
+//const arr = [{"value": "abc","checked": true},{"value": "xyz","checked": false},{"value": "lmn","checked": true}]
 
 const createAlbumTable = (arr) => {
     html = "";
@@ -49,11 +44,11 @@ const createAlbumTable = (arr) => {
         html += '<div class=\"card-header\">\n';
         html += '<div class=\"card-title h5\">' + arr[i].title + '</div>\n';
         html += '<div class=\"card-subtitle text-gray\">'+ arr[i].year + ' - '+ arr[i].alterego + '</div>\n';
-        html += '       </div>\n';
+        html += '</div>\n';
         html += '<div class=\"class-image\">\n  ';
         html += '<img class=\"img-responsive\" src=\"./' + arr[i].cover + '\" alt=\"Album Grüner Samt\">\n';
-        html += ' </div>\n';
-        html += ' <div class=\"class-body\">'+ arr[i].releaseDate +'</div>\n';
+        html += '</div>\n';
+        html += '<div class=\"class-body\">Release: ' + arr[i].releaseDate +'</div>\n';
         html += '<div class=\"card-footer\">\n';
         html += '<div class=\"btn-group btn-group block\">\n';
         html += '<button class=\"btn btn-link\"><a href=\"'+ arr[i].spotify_link +'\">Spotify Playlist</a></button>';
@@ -64,8 +59,8 @@ const createAlbumTable = (arr) => {
         html += '<i class="form-icon"></i> My favorite Album'
         html += '</label>'
         html += '</div>';
-        html += ' </div>\n';
-        html += ' </div>\n';
+        html += '</div>\n';
+        html += '</div>\n';
         html += '</div>\n';
         html += '</div>\n';
         html += '</div>\n';
@@ -76,15 +71,27 @@ const createAlbumTable = (arr) => {
 
     return html;
 }
+
+const createHeartTable = () => {
+        heartTable = "";
+
+    for (let i = 0; i < 5; i++) {
+        heartTable += '<th>' + heart +'</th>\n';
+    
+    }
+    return heartTable;
+}
+
+
+
 const init = () => {
 
     document.getElementById('album').innerHTML = createAlbumTable(album);
+    document.getElementById('heart').innerHTML = createHeartTable(heart);
     
     
 }
 
 window.addEventListener('load', init);
 
-
-window.onload = createTableHTML;
 
