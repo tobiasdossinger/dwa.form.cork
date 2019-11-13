@@ -55,7 +55,8 @@ const createAlbumTable = (arr) => {
         html += '<button class=\"btn btn-link\"><a href=\"'+ arr[i].buy_link +'\">Buy Album</a></button>\n';
         html += '<div class="form-group">'
         html += '<label class="form-checkbox">'
-        html += '<input type="checkbox">'
+        // html += '<input type="checkbox">'
+        html += '<input type="radio" name="favorite" value="'+arr[i].title+'">'
         html += '<i class="form-icon"></i> My favorite Album'
         html += '</label>'
         html += '</div>';
@@ -76,8 +77,8 @@ const createHeartTable = () => {
         heartTable = "";
 
     for (let i = 0; i < 5; i++) {
-        heartTable += '<th>' + heart +'</th>\n';
-    
+        heartTable += '<input class="hearts" type="radio" id="heart'+i+'" name="rating" value="'+i+'" /><label class="fas fa-heart heart-label" for="heart'+i+'"></label>'
+        // heartTable += '<th>' + heart +'</th>\n';
     }
     return heartTable;
 }

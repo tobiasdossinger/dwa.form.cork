@@ -105,3 +105,30 @@ h3{
   font-size: 50px;
   color: red;
 }
+
+.error-message {
+  display: none;
+  color: red;
+  text-align: center;
+}
+
+.show {
+  display: block;
+}
+
+.hearts {
+  display: none;
+}
+
+.heart-label {
+  color: #999;
+  float: right;
+}
+
+.hearts:checked ~ .heart-label {
+  color: red;
+}
+
+.hearts:checked + .heart-label {
+  color: red;
+}

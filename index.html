@@ -14,8 +14,6 @@
     <link rel="stylesheet " href="./css/fontawesome/css/all.min.css">
 
     <script type="scipt" src="jquery.js"></script>
-    <script type="application/javascript" src="./js/script.js"></script>
-    <script type="application/javascript" src="./js/cards.js"></script>
     <title>Form Validation</title>
 </head>
 
@@ -36,33 +34,33 @@
               </div>
 
 <h1> <b> Vote </b> for your <b> favorite Marteria Album</b></h1>
-<form id="form" action="https://webdevcit.com/displayvalues.php" method="GET">
+<!-- <form id="form" action="https://webdevcit.com/displayvalues.php" method="GET"> -->
     <div class="container">
-            <!-- <div id="error"></div> -->
-            <div class="columns col-gapless">
-                <div class="column col-0"></div>
-                <div class="column col-6">
-
-                    <div class="form-group">
-                        <div class="has-icon-left">
-                            <input class="form-input" type="text" id="name" name="name" placeholder="Max Mustermann"
-                                required>
-                            <i class="form-icon icon icon-people"></i>
-                        </div>
+        <!-- <div id="error"></div> -->
+        <div class="columns col-gapless">
+            <div class="column col-0"></div>
+            <div class="column col-6">
+                
+                <div class="form-group">
+                    <div class="has-icon-left">
+                        <input class="form-input" type="text" id="name" name="name" placeholder="Max Mustermann"
+                        required>
+                        <i class="form-icon icon icon-people"></i>
                     </div>
-                    <div>
-                        <div class="has-icon-left">
-                            <input class="form-input" type="email" id="email" name="email"
-                                placeholder="yourmail@website.com" required>
-                            <i class="form-icon icon icon-mail"></i>
-                        </div>
+                </div>
+                <div>
+                    <div class="has-icon-left">
+                        <input class="form-input" type="email" id="email" name="email"
+                        placeholder="yourmail@website.com" required>
+                        <i class="form-icon icon icon-mail"></i>
                     </div>
-                    <div>
-                        <label class="form-label" for="6-Digit-Code">6-Digit-Code</label>
-                        <input class="form-input" type="text" id="6DigitCode" name="6-Digit-Code" placeholder="123456"
+                </div>
+                <div>
+                    <label class="form-label" for="6-Digit-Code">6-Digit-Code</label>
+                    <input class="form-input" type="text" id="6DigitCode" name="6-Digit-Code" placeholder="123456"
                             required>
-                    </div>
-
+                        </div>
+                        
                 </div>
                 <div class="column col-0"></div>
             </div>
@@ -84,6 +82,7 @@
             </div>
             <div class="column col-0"></div>
         </div>
+        
 
         <div class="container">
             <div class="columns">
@@ -115,16 +114,19 @@
                 <div class="column col-0"></div>
             </div>
         </div>
+        <div id="error-favorite-album" class="error-message">Please select your favorite album</div>
+        <div id="error-email" class="error-message">No valid email</div>
+        <div id="error-rating" class="error-message">Please rate the album</div>
         <div class="columns col-gapless">
             <div class="column col-0"></div>
             <div class="">
-                <button class="btn btn-success btn-lg" type="submit">Vote</button>
+                <button id="submit-form" class="btn btn-success btn-lg">Vote</button>
                 <button class="btn btn-error btn-lg" type="reset">Reset Form</button>
             </div>
             <div class="column col-0"></div>
 
         </div>
-    </form>
+    <!-- </form> -->
 <!-- 
     <div class="form-group"></div>
         <label class="form-checkbox">
@@ -165,6 +167,8 @@
         </div>
     </label>
     </div> -->
+    <script type="application/javascript" src="./js/script.js"></script>
+    <script type="application/javascript" src="./js/cards.js"></script>
 </body>
 
 </html>
