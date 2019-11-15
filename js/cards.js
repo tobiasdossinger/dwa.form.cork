@@ -1,3 +1,5 @@
+
+//Album-Array with objects
 let album = [
 
 
@@ -28,7 +30,7 @@ console.log(JSON.parse(JSON.stringify(album)));
 
 
 
-
+//Album-Card - Loop Function
 const createAlbumTable = (arr) => {
     html = "";
 
@@ -50,14 +52,11 @@ const createAlbumTable = (arr) => {
         html += '<div class=\"btn-group  block\">\n';
         html += '<a class="fab fa-spotify" href=\"' + arr[i].spotify_link + '" target="_blank" ></a>';
         html += '<a class="fab fa-amazon" href=\"' + arr[i].buy_link + '" target="_blank"></a>\n';
-        // html += '<div class="form-group">'
         html += '<label class="form-checkbox">'
-        // html += '<input type="checkbox">'
         html += '<input type="radio" name="favorite" value="' + arr[i].title + '">'
         html += '<i class="form-icon"></i>Select'
         html += '</label>'
         html += '</div>';
-        // html += '</div>\n';
         html += '</div>\n';
         html += '</div>\n';
         html += '</div>\n';
@@ -68,7 +67,7 @@ const createAlbumTable = (arr) => {
 
     return html;
 }
-
+// The Loop-function for the rating-system
 const createHeartTable = () => {
     heartTable = "";
 
@@ -78,6 +77,7 @@ const createHeartTable = () => {
     }
     return heartTable;
 }
+
 
 
 
