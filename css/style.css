@@ -106,6 +106,7 @@ h3{
   border-radius: .3rem;
   border-style: hidden;
   opacity: 70%;
+  
 }
 
 .form-checkbox input:indeterminate + .form-icon {
@@ -115,6 +116,10 @@ h3{
 }
 .form-checkbox:hover {
   opacity: 100%;
+}
+
+.form-checkbox input:checked {
+  display: none;
 }
 
 
@@ -128,8 +133,6 @@ h3{
   border-radius: .3rem;
   border-style: hidden;
   
-
-
 }
 
 .form-checkbox, .form-radio, .form-switch{

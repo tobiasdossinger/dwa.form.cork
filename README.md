@@ -19,16 +19,16 @@ Most recently, Marteria and Casper were awarded the [1 Live Crown "BEST-HIP-HOP-
 - [x] Submit an e-mail
 - [x] Submit a 6-digit-code
 - [x] Select your favorite album
-- [x] Rate your favorite album with upto 5 hearts
+- [x] Rate your favorite album with upto 5 vinyl
 
 *optional*
-- [x] Listen your favorite album e.g. or any other album via Spotify
-- [x] Buy your favorite album e.g. or any other album via Amazon
+- [x] Listen to your favorite album or any other album via Spotify
+- [x] Buy your favorite album or any other album via Amazon
 
 ## Future plans
 
 - [ ] Load social media channels of marteria dynamically on to the site (Live-Feed)
-- [ ] Add Ticket-Section for upcoming concerts
+- [ ] Add ticket-section for upcoming concerts
 
 If you have any questions and/or feedback about the project, contact me via [e-mail](mailto:mail.tobiasdossinger.com). 
 
