@@ -14,9 +14,11 @@ button{
   margin-right: 2rem;
 }
 
-a {
-  color: black;
-  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+
+
+.error-styling{
+  border-color: red;
+
 }
 
 .parallax{
@@ -74,8 +76,7 @@ h3{
 .column{
   padding-bottom: 2.4rem;
 }
-.card {
-  opacity: 70%;
+.card{
   border: 0;
   box-shadow: 0 .5rem 1rem 
   rgba(63, 51, 51, 0.15);
@@ -96,10 +97,80 @@ h3{
 .card:hover{
   opacity: 100%;
   border: 1;
-  box-shadow: 0 .5rem 1rem 
+  box-shadow: 0 .5rem 1rem;
   
 }
 
+.form-checkbox input:checked + .form-icon, .form-radio input:checked + .form-icon, .form-switch input:checked + .form-icon {
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+  border-radius: .3rem;
+  border-style: hidden;
+  opacity: 70%;
+}
+
+.form-checkbox input:indeterminate + .form-icon {
+  background:grey;
+  border-radius: .3rem;
+  border-style: hidden;
+}
+.form-checkbox:hover {
+  opacity: 100%;
+}
+
+
+.form-checkbox .form-icon, .form-radio .form-icon{
+  height: 2.8rem;
+  left: -3px;
+  top: 2.3rem;
+  width: 18.8rem;
+
+  background:grey;
+  border-radius: .3rem;
+  border-style: hidden;
+  
+
+
+}
+
+.form-checkbox, .form-radio, .form-switch{
+  display: block;
+  line-height: 1.2rem;
+  margin: .2rem 0;
+  min-height: 1.4rem;
+  padding: 5.1rem 1.4rem 0.1rem 8.2rem;
+  position: relative;
+}
+
+.fab.fa-spotify{
+  color: rgb(36, 224, 102);
+  font-size: 60px;
+  text-align: center;
+  margin: 10px 30px 0 53px;
+
+}
+
+.fab.fa-spotify:hover{
+  color: rgb(45, 199, 99);
+  font-size: 60px;
+  text-align: center;
+  margin: 10px 30px 0 53px;
+}
+
+.fab.fa-amazon{
+  color: rgb(155, 155, 155);
+  font-size: 60px;
+  text-align: center;
+  margin: 10px 30px 0 100px;
+  
+}
+
+.fab.fa-amazon:hover{
+  color: black;
+  font-size: 60px;
+  text-align: center;
+  margin: 10px 30px 0 100px;
+  
+}
 
 .heart-customs{
   font-size: 50px;
@@ -112,6 +183,7 @@ h3{
   text-align: center;
 }
 
+
 .show {
   display: block;
 }
@@ -121,14 +193,22 @@ h3{
 }
 
 .heart-label {
-  color: #999;
+  color: grey;
   float: right;
+  font-size: 2rem;
+  padding-right: 1rem;
+
+  
 }
 
 .hearts:checked ~ .heart-label {
-  color: red;
+  color: rgb(255,215,0);
+  
+  
 }
 
 .hearts:checked + .heart-label {
-  color: red;
+  color: rgb(255,215,0);
+  
+  
 }

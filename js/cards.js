@@ -24,13 +24,9 @@ let album = [
 
 ]
 
-let heart = '<i class="fas fa-heart"></i>';
+//let heart = '<i class="fas fa-heart"></i>';
 
 console.log(album[1].title);
-
-//const checked = false;
-
-//const arr = [{"value": "abc","checked": true},{"value": "xyz","checked": false},{"value": "lmn","checked": true}]
 
 const createAlbumTable = (arr) => {
     html = "";
@@ -46,21 +42,21 @@ const createAlbumTable = (arr) => {
         html += '<div class=\"card-subtitle text-gray\">'+ arr[i].year + ' - '+ arr[i].alterego + '</div>\n';
         html += '</div>\n';
         html += '<div class=\"class-image\">\n  ';
-        html += '<img class=\"img-responsive\" src=\"./' + arr[i].cover + '\" alt=\"Album Grüner Samt\">\n';
+        html += '<img class=\"img-responsive\" src=\"./' + arr[i].cover + '\" alt=\"'+ arr[i].title + '\">\n';
         html += '</div>\n';
         html += '<div class=\"class-body\">Release: ' + arr[i].releaseDate +'</div>\n';
         html += '<div class=\"card-footer\">\n';
-        html += '<div class=\"btn-group btn-group block\">\n';
-        html += '<button class=\"btn btn-link\"><a href=\"'+ arr[i].spotify_link +'\">Spotify Playlist</a></button>';
-        html += '<button class=\"btn btn-link\"><a href=\"'+ arr[i].buy_link +'\">Buy Album</a></button>\n';
-        html += '<div class="form-group">'
+        html += '<div class=\"btn-group  block\">\n';
+        html += '<a class="fab fa-spotify" href=\"'+ arr[i].spotify_link +'" target="_blank" ></a>';
+        html += '<a class="fab fa-amazon" href=\"'+ arr[i].buy_link +'" target="_blank"></a>\n';
+        // html += '<div class="form-group">'
         html += '<label class="form-checkbox">'
         // html += '<input type="checkbox">'
-        html += '<input type="radio" name="favorite" value="'+arr[i].title+'">'
-        html += '<i class="form-icon"></i> My favorite Album'
+        html += '<input type="radio" name="favorite" value="'+ arr[i].title +'">'
+        html += '<i class="form-icon"></i>Select'
         html += '</label>'
         html += '</div>';
-        html += '</div>\n';
+        // html += '</div>\n';
         html += '</div>\n';
         html += '</div>\n';
         html += '</div>\n';
@@ -77,8 +73,8 @@ const createHeartTable = () => {
         heartTable = "";
 
     for (let i = 0; i < 5; i++) {
-        heartTable += '<input class="hearts" type="radio" id="heart'+i+'" name="rating" value="'+i+'" /><label class="fas fa-heart heart-label" for="heart'+i+'"></label>'
-        // heartTable += '<th>' + heart +'</th>\n';
+        heartTable += '<input class="hearts" type="radio" id="heart'+ (5-i) +'" name="rating" value="'+ (5-i) +'" /><label class="fas fa-record-vinyl heart-label" for="heart'+ (5-i) +'"></label>'
+       
     }
     return heartTable;
 }
@@ -94,5 +90,7 @@ const init = () => {
 }
 
 window.addEventListener('load', init);
+
+
 
 

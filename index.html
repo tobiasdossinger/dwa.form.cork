@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- As I told you, I used a lite-weight CSS Framework -->
     <link rel="stylesheet" href="./spectre-0.5.8/dist/spectre-exp.min.css">
     <link rel="stylesheet" href="./spectre-0.5.8/dist/spectre-icons.min.css">
     <link rel="stylesheet" href="./spectre-0.5.8/dist/spectre.min.css">
 
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet " href="./css/fontawesome/css/all.min.css">
 
-    <script type="scipt" src="jquery.js"></script>
+    <!-- Icon Library Font Awesome -->
+    <link rel="stylesheet " href="./css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
     <title>Form Validation</title>
 </head>
 
 <body>
-        <div class="parallax">
+    <!--         <div class="parallax">
                 <div class="parallax-top-left" tabindex="1"></div>
                 <div class="parallax-top-right" tabindex="2"></div>
                 <div class="parallax-bottom-left" tabindex="3"></div>
@@ -31,142 +33,88 @@
                     <img src="https://www.becktomusic.de/dateien/marsimoto_pressefoto9_fotograf_paulripke.jpg" class="img-responsive rounded" ...>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
-<h1> <b> Vote </b> for your <b> favorite Marteria Album</b></h1>
-<!-- <form id="form" action="https://webdevcit.com/displayvalues.php" method="GET"> -->
+    <h1> <b> Vote </b> for your <b> favorite Marteria Album</b></h1>
     <div class="container">
-        <!-- <div id="error"></div> -->
         <div class="columns col-gapless">
             <div class="column col-0"></div>
             <div class="column col-6">
-                
+
                 <div class="form-group">
                     <div class="has-icon-left">
-                        <input class="form-input" type="text" id="name" name="name" placeholder="Max Mustermann"
-                        required>
+                        <input class="form-input" type="text" id="name" name="name" placeholder="Max Mustermann">
                         <i class="form-icon icon icon-people"></i>
                     </div>
                 </div>
                 <div>
                     <div class="has-icon-left">
-                        <input class="form-input" type="email" id="email" name="email"
-                        placeholder="yourmail@website.com" required>
+                        <input class="form-input" type="text" id="email" name="email"
+                            placeholder="yourmail@website.com">
                         <i class="form-icon icon icon-mail"></i>
                     </div>
                 </div>
                 <div>
                     <label class="form-label" for="6-Digit-Code">6-Digit-Code</label>
-                    <input class="form-input" type="text" id="6DigitCode" name="6-Digit-Code" placeholder="123456"
-                            required>
-                        </div>
-                        
+                    <input class="form-input" type="text" id="6DigitCode" name="6-Digit-Code" placeholder="123456">
                 </div>
-                <div class="column col-0"></div>
+
             </div>
+            <div class="column col-0"></div>
         </div>
-        <div class="columns col-gapless">
+    </div>
+    <div class="columns col-gapless">
+        <div class="column col-0"></div>
+        <div class="">
+            <h2>Choose <b>one</b> album</h2>
+        </div>
+        <div class="column col-0"></div>
+    </div>
+
+    <!-- Album Cards (cards.js file) -->
+    <div id="album"></div>
+
+    <div class="columns col-gapless">
+        <div class="column col-0"></div>
+        <div class="">
+            <h3>Rate it</h3>
+        </div>
+        <div class="column col-0"></div>
+    </div>
+
+
+    <div class="container">
+        <div class="columns">
             <div class="column col-0"></div>
             <div class="">
-                <h2>Choose <b>one</b> album</h2>
+                <table>
+                    <tr>
+                        <!-- In this div, id=heart gets triggered by the cards.js script -->
+                        <div id="heart"></div>
+                    </tr>
+                </table>
             </div>
+
+
             <div class="column col-0"></div>
         </div>
-         <!-- Album Cards -->
-        <div id="album"></div>
+    </div>
+    <!-- Hidden Error Messages -->
+    <div id="error-name" class="error-message">Please put your name into the field!</div>
+    <div id="error-email" class="error-message">No valid email!</div>
+    <div id="error-6DigitCode" class="error-message">Please put 6 digits into the field!</div>
+    <div id="error-favorite-album" class="error-message">Please select your favorite album!</div>
+    <div id="error-rating" class="error-message">Please rate the album!</div>
 
-        <div class="columns col-gapless">
-            <div class="column col-0"></div>
-            <div class="">
-                <h3>Rate it</h3>
-            </div>
-            <div class="column col-0"></div>
+    <div class="columns col-gapless">
+        <div class="column col-0"></div>
+        <div class="">
+            <button id="submit-form" class="btn btn-success btn-lg">Vote</button>
+            <button id="reset-form" class="btn btn-error btn-lg">Reset Form</button>
         </div>
-        
+        <div class="column col-0"></div>
 
-        <div class="container">
-            <div class="columns">
-                <div class="column col-0"></div>
-                <div class="">
-                    <table>
-                        <tr>
-                            <div id="heart" class="heart-customs"></div>
-                        </tr>
-                    </table>
-            </div>
-                <!-- <div class="">
-                    <span onmouseover="heartmark(this)" onclick="heartmark(this)" id="1one"
-                        style="font-size:40px;cursor:pointer;" class="fas fa-heart checked"></span>
-                    <span onmouseover="heartmark(this)" onclick="heartmark(this)" id="2one"
-                        style="font-size:40px;cursor:pointer;" class="fas fa-heart "></span>
-                    <span onmouseover="heartmark(this)" onclick="heartmark(this)" id="3one"
-                        style="font-size:40px;cursor:pointer;" class="fas fa-heart "></span>
-                    <span onmouseover="heartmark(this)" onclick="heartmark(this)" id="4one"
-                        style="font-size:40px;cursor:pointer;" class="fas fa-heart"></span>
-                    <span onmouseover="heartmark(this)" onclick="heartmark(this)" id="5one"
-                        style="font-size:40px;cursor:pointer;" class="fas fa-heart"></span>
-                    <br />
-                </div> -->
-
-                
-
-                
-                <div class="column col-0"></div>
-            </div>
-        </div>
-        <div id="error-favorite-album" class="error-message">Please select your favorite album</div>
-        <div id="error-email" class="error-message">No valid email</div>
-        <div id="error-rating" class="error-message">Please rate the album</div>
-        <div class="columns col-gapless">
-            <div class="column col-0"></div>
-            <div class="">
-                <button id="submit-form" class="btn btn-success btn-lg">Vote</button>
-                <button class="btn btn-error btn-lg" type="reset">Reset Form</button>
-            </div>
-            <div class="column col-0"></div>
-
-        </div>
-    <!-- </form> -->
-<!-- 
-    <div class="form-group"></div>
-        <label class="form-checkbox">
-          <input type="checkbox">
-          <i class="form-icon"></i>
-       
-      
-
-
-
-      <div id="cards" class="container">
-        <div class="docs-demo columns">
-        <div class="column col-xs-12">
-        <div class="card">
-        <div class="card-header">
-        <div class="card-title h5">TITLE</div>
-        <div class="card-subtitle text-gray">Jahr und ' - '+ ${arr[i].alterego} </div>
-        </div>
-        <div class="class-image">
-        <img class="img-responsive" src="./' + ${arr[i].cover} + alt=Album Grüner Samt\">
-        </div>
-        <div class="class-body">'+ arr[i].releaseDate +'</div>
-        <div class="card-footer\">
-        <div class="btn-group btn-group block\">
-        <button class="btn btn-link\"><a href="'+ arr[i].spotify_link +'\">Spotify Playlist</a></button>
-        <button class="btn btn-link\"><a href="'+ arr[i].buy_link +'\">Buy Album</a></button>
-        <div class="form-group">
-        <label class="form-checkbox">
-        <input type="checkbox">
-        <i class="form-icon"></i> My favorite Album
-        </label>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-    </label>
-    </div> -->
+    </div>
     <script type="application/javascript" src="./js/script.js"></script>
     <script type="application/javascript" src="./js/cards.js"></script>
 </body>
