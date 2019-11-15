@@ -14,8 +14,6 @@ button{
   margin-right: 2rem;
 }
 
-
-
 .error-styling{
   border-color: red;
 
@@ -103,16 +101,20 @@ h3{
 
 .form-checkbox input:checked + .form-icon, .form-radio input:checked + .form-icon, .form-switch input:checked + .form-icon {
   background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
-  border-radius: .3rem;
+  border-radius: 1.3rem;
   border-style: hidden;
   opacity: 70%;
   
 }
 
+
+
+
 .form-checkbox input:indeterminate + .form-icon {
   background:grey;
   border-radius: .3rem;
   border-style: hidden;
+
 }
 .form-checkbox:hover {
   opacity: 100%;
@@ -120,6 +122,7 @@ h3{
 
 .form-checkbox input:checked {
   display: none;
+  
 }
 
 
@@ -133,6 +136,10 @@ h3{
   border-radius: .3rem;
   border-style: hidden;
   
+}
+
+ .form-icon::before{
+  content: "Select";
 }
 
 .form-checkbox, .form-radio, .form-switch{

@@ -23,7 +23,7 @@ submitButton.addEventListener('click', function() {
         errorMessages[i].classList.remove('show');
     }
 
-    if(name.value.match(/[A-Z][a-zA-Z]/)) {
+    if(name.value.match(/^[a-zA-Z ]+$/)) {
         url += "name=" + encodeURI(name.value) + '&';
     } else {
         erroredFields.push('name');

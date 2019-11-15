@@ -54,7 +54,7 @@ const createAlbumTable = (arr) => {
         html += '<a class="fab fa-amazon" href=\"' + arr[i].buy_link + '" target="_blank"></a>\n';
         html += '<label class="form-checkbox">'
         html += '<input type="radio" name="favorite" value="' + arr[i].title + '">'
-        html += '<i class="form-icon"></i>Select'
+        html += '<i class="form-icon"></i>'
         html += '</label>'
         html += '</div>';
         html += '</div>\n';

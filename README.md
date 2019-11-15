@@ -4,7 +4,6 @@
 **This is my submission for the Form-Validation Assignment** </br>
 *Due 15. November 2019 @ 11:59 pm* 
 
-## Hosted @ https://dwa.tobiasdossinger.com/ 
 
 ##  About the artist
 I choose Marteria/ Marsimoto, a german hip-hop artist, who has produced several chart hits in the last ten years. The most popular hits are Verstrahlt (2010) and Lila Wolken (2012). 
@@ -30,7 +29,7 @@ Most recently, Marteria and Casper were awarded the [1 Live Crown "BEST-HIP-HOP-
 - [ ] Load social media channels of marteria dynamically on to the site (Live-Feed)
 - [ ] Add ticket-section for upcoming concerts
 
-If you have any questions and/or feedback about the project, contact me via [e-mail](mailto:mail.tobiasdossinger.com). 
+
 
 **Enjoy** 🎶
 
